@@ -8,17 +8,122 @@
 
 /* Begin PBXBuildFile section */
 		CB220EB32C64EA0E00D27CD0 /* MedBookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EB22C64EA0E00D27CD0 /* MedBookApp.swift */; };
-		CB220EB52C64EA0E00D27CD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EB42C64EA0E00D27CD0 /* ContentView.swift */; };
 		CB220EB72C64EA1000D27CD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB220EB62C64EA1000D27CD0 /* Assets.xcassets */; };
 		CB220EBA2C64EA1000D27CD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB220EB92C64EA1000D27CD0 /* Preview Assets.xcassets */; };
+		CB220ECB2C64EE4F00D27CD0 /* MRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220ECA2C64EE4F00D27CD0 /* MRoutes.swift */; };
+		CB220ECF2C64EE7300D27CD0 /* MNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220ECE2C64EE7300D27CD0 /* MNavigator.swift */; };
+		CB220ED12C64F5EF00D27CD0 /* UserStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220ED02C64F5EF00D27CD0 /* UserStateController.swift */; };
+		CB220ED42C64F66800D27CD0 /* MUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220ED32C64F66800D27CD0 /* MUserDefaults.swift */; };
+		CB220ED72C64FA3800D27CD0 /* MAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220ED62C64FA3800D27CD0 /* MAuthView.swift */; };
+		CB220EDA2C64FA5300D27CD0 /* MAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220ED92C64FA5300D27CD0 /* MAuthViewModel.swift */; };
+		CB220EDC2C64FB6600D27CD0 /* MFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EDB2C64FB6600D27CD0 /* MFont.swift */; };
+		CB220EDD2C64FD1900D27CD0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB220EC22C64EB8C00D27CD0 /* Poppins-Medium.ttf */; };
+		CB220EDE2C64FD1900D27CD0 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB220EC32C64EB8D00D27CD0 /* Poppins-Regular.ttf */; };
+		CB220EDF2C64FD1900D27CD0 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB220EC42C64EB8D00D27CD0 /* Poppins-Bold.ttf */; };
+		CB220EE12C64FE9700D27CD0 /* MTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EE02C64FE9700D27CD0 /* MTextField.swift */; };
+		CB220EE32C6501AC00D27CD0 /* MFillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EE22C6501AC00D27CD0 /* MFillButton.swift */; };
+		CB220EE52C652CDA00D27CD0 /* MColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EE42C652CDA00D27CD0 /* MColor.swift */; };
+		CB220EE72C653D1100D27CD0 /* MModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EE62C653D1100D27CD0 /* MModel.swift */; };
+		CB220EE92C654E8A00D27CD0 /* MCountrySelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EE82C654E8A00D27CD0 /* MCountrySelect.swift */; };
+		CB220EEC2C65DE9100D27CD0 /* BaseNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EEB2C65DE9100D27CD0 /* BaseNetworkHandler.swift */; };
+		CB220EEE2C65DF4600D27CD0 /* Network+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EED2C65DF4600D27CD0 /* Network+Utils.swift */; };
+		CB220EF12C65EA5E00D27CD0 /* GetCountriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EF02C65EA5E00D27CD0 /* GetCountriesList.swift */; };
+		CB220EF42C65EF2400D27CD0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EF32C65EF2400D27CD0 /* APIConstants.swift */; };
+		CB220EF62C65F57500D27CD0 /* MCountriesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EF52C65F57500D27CD0 /* MCountriesListCell.swift */; };
+		CB220EF82C6602FF00D27CD0 /* GetCurrentCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EF72C6602FF00D27CD0 /* GetCurrentCountry.swift */; };
+		CB220EFB2C660AEB00D27CD0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EFA2C660AEB00D27CD0 /* User.swift */; };
+		CB220EFD2C660D4C00D27CD0 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220EFC2C660D4C00D27CD0 /* Book.swift */; };
+		CB220F012C661BD600D27CD0 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F002C661BD600D27CD0 /* AuthHandler.swift */; };
+		CB220F032C661D2500D27CD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F022C661D2500D27CD0 /* ContentView.swift */; };
+		CB220F062C661D7200D27CD0 /* MHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F052C661D7200D27CD0 /* MHomeView.swift */; };
+		CB220F092C66212C00D27CD0 /* SignInRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F082C66212C00D27CD0 /* SignInRepo.swift */; };
+		CB220F0B2C66213A00D27CD0 /* SignUpRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F0A2C66213A00D27CD0 /* SignUpRepo.swift */; };
+		CB220F0D2C662B5400D27CD0 /* AuthDomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F0C2C662B5400D27CD0 /* AuthDomainError.swift */; };
+		CB220F122C66465A00D27CD0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F112C66465A00D27CD0 /* LottieView.swift */; };
+		CB220F142C66531800D27CD0 /* MReadBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F132C66531800D27CD0 /* MReadBookCell.swift */; };
+		CB220F162C66556800D27CD0 /* MCircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F152C66556800D27CD0 /* MCircularProgressBar.swift */; };
+		CB220F182C667A0200D27CD0 /* MCategoryChips.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F172C667A0200D27CD0 /* MCategoryChips.swift */; };
+		CB220F1A2C667ED700D27CD0 /* MPopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F192C667ED700D27CD0 /* MPopularCell.swift */; };
+		CB220F1C2C66869700D27CD0 /* MBooksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F1B2C66869700D27CD0 /* MBooksList.swift */; };
+		CB220F1E2C66871E00D27CD0 /* MHorizontalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F1D2C66871E00D27CD0 /* MHorizontalCell.swift */; };
+		CB220F202C66908200D27CD0 /* MDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F1F2C66908200D27CD0 /* MDetailView.swift */; };
+		CB220F222C6724BA00D27CD0 /* MSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F212C6724BA00D27CD0 /* MSearchView.swift */; };
+		CB220F242C67292500D27CD0 /* MSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F232C67292500D27CD0 /* MSearchModel.swift */; };
+		CB220F262C672A0500D27CD0 /* MSortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F252C672A0500D27CD0 /* MSortCell.swift */; };
+		CB220F282C672D9D00D27CD0 /* MSearchBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F272C672D9D00D27CD0 /* MSearchBookCell.swift */; };
+		CB220F2C2C67303A00D27CD0 /* MSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F2B2C67303A00D27CD0 /* MSearchViewModel.swift */; };
+		CB220F2E2C6731BC00D27CD0 /* SearchBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F2D2C6731BC00D27CD0 /* SearchBook.swift */; };
+		CB220F312C67707E00D27CD0 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = CB220F302C67707E00D27CD0 /* CachedAsyncImage */; };
+		CB220F342C67709700D27CD0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CB220F332C67709700D27CD0 /* Lottie */; };
+		CB220F362C6770C200D27CD0 /* MCachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F352C6770C200D27CD0 /* MCachedImage.swift */; };
+		CB220F382C677C1000D27CD0 /* MBookMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F372C677C1000D27CD0 /* MBookMarkView.swift */; };
+		CB220F3A2C677C5900D27CD0 /* MBookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F392C677C5900D27CD0 /* MBookmarkViewModel.swift */; };
+		CB220F3C2C6785FF00D27CD0 /* MDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F3B2C6785FF00D27CD0 /* MDetailViewModel.swift */; };
+		CB220F3F2C67868600D27CD0 /* MBookMarkRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F3E2C67868600D27CD0 /* MBookMarkRepo.swift */; };
+		CB220F412C679B0900D27CD0 /* MHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F402C679B0900D27CD0 /* MHomeViewModel.swift */; };
+		CB220F432C679FCB00D27CD0 /* StaticDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F422C679FCB00D27CD0 /* StaticDataSource.swift */; };
+		CB220F452C67A60E00D27CD0 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB220F442C67A60E00D27CD0 /* SplashScreen.swift */; };
+		CB220F472C67A73500D27CD0 /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = CB220F462C67A73500D27CD0 /* books.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB220EAF2C64EA0E00D27CD0 /* MedBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB220EB22C64EA0E00D27CD0 /* MedBookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedBookApp.swift; sourceTree = "<group>"; };
-		CB220EB42C64EA0E00D27CD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB220EB62C64EA1000D27CD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB220EB92C64EA1000D27CD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB220EC22C64EB8C00D27CD0 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		CB220EC32C64EB8D00D27CD0 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		CB220EC42C64EB8D00D27CD0 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		CB220EC52C64EBB300D27CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CB220ECA2C64EE4F00D27CD0 /* MRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRoutes.swift; sourceTree = "<group>"; };
+		CB220ECE2C64EE7300D27CD0 /* MNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNavigator.swift; sourceTree = "<group>"; };
+		CB220ED02C64F5EF00D27CD0 /* UserStateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateController.swift; sourceTree = "<group>"; };
+		CB220ED32C64F66800D27CD0 /* MUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUserDefaults.swift; sourceTree = "<group>"; };
+		CB220ED62C64FA3800D27CD0 /* MAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAuthView.swift; sourceTree = "<group>"; };
+		CB220ED92C64FA5300D27CD0 /* MAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAuthViewModel.swift; sourceTree = "<group>"; };
+		CB220EDB2C64FB6600D27CD0 /* MFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFont.swift; sourceTree = "<group>"; };
+		CB220EE02C64FE9700D27CD0 /* MTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTextField.swift; sourceTree = "<group>"; };
+		CB220EE22C6501AC00D27CD0 /* MFillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFillButton.swift; sourceTree = "<group>"; };
+		CB220EE42C652CDA00D27CD0 /* MColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MColor.swift; sourceTree = "<group>"; };
+		CB220EE62C653D1100D27CD0 /* MModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MModel.swift; sourceTree = "<group>"; };
+		CB220EE82C654E8A00D27CD0 /* MCountrySelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCountrySelect.swift; sourceTree = "<group>"; };
+		CB220EEB2C65DE9100D27CD0 /* BaseNetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkHandler.swift; sourceTree = "<group>"; };
+		CB220EED2C65DF4600D27CD0 /* Network+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Utils.swift"; sourceTree = "<group>"; };
+		CB220EF02C65EA5E00D27CD0 /* GetCountriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesList.swift; sourceTree = "<group>"; };
+		CB220EF32C65EF2400D27CD0 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		CB220EF52C65F57500D27CD0 /* MCountriesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCountriesListCell.swift; sourceTree = "<group>"; };
+		CB220EF72C6602FF00D27CD0 /* GetCurrentCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentCountry.swift; sourceTree = "<group>"; };
+		CB220EFA2C660AEB00D27CD0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CB220EFC2C660D4C00D27CD0 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		CB220F002C661BD600D27CD0 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
+		CB220F022C661D2500D27CD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB220F052C661D7200D27CD0 /* MHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHomeView.swift; sourceTree = "<group>"; };
+		CB220F082C66212C00D27CD0 /* SignInRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRepo.swift; sourceTree = "<group>"; };
+		CB220F0A2C66213A00D27CD0 /* SignUpRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRepo.swift; sourceTree = "<group>"; };
+		CB220F0C2C662B5400D27CD0 /* AuthDomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDomainError.swift; sourceTree = "<group>"; };
+		CB220F112C66465A00D27CD0 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		CB220F132C66531800D27CD0 /* MReadBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MReadBookCell.swift; sourceTree = "<group>"; };
+		CB220F152C66556800D27CD0 /* MCircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCircularProgressBar.swift; sourceTree = "<group>"; };
+		CB220F172C667A0200D27CD0 /* MCategoryChips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCategoryChips.swift; sourceTree = "<group>"; };
+		CB220F192C667ED700D27CD0 /* MPopularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPopularCell.swift; sourceTree = "<group>"; };
+		CB220F1B2C66869700D27CD0 /* MBooksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBooksList.swift; sourceTree = "<group>"; };
+		CB220F1D2C66871E00D27CD0 /* MHorizontalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHorizontalCell.swift; sourceTree = "<group>"; };
+		CB220F1F2C66908200D27CD0 /* MDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDetailView.swift; sourceTree = "<group>"; };
+		CB220F212C6724BA00D27CD0 /* MSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSearchView.swift; sourceTree = "<group>"; };
+		CB220F232C67292500D27CD0 /* MSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSearchModel.swift; sourceTree = "<group>"; };
+		CB220F252C672A0500D27CD0 /* MSortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSortCell.swift; sourceTree = "<group>"; };
+		CB220F272C672D9D00D27CD0 /* MSearchBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSearchBookCell.swift; sourceTree = "<group>"; };
+		CB220F2B2C67303A00D27CD0 /* MSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSearchViewModel.swift; sourceTree = "<group>"; };
+		CB220F2D2C6731BC00D27CD0 /* SearchBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBook.swift; sourceTree = "<group>"; };
+		CB220F352C6770C200D27CD0 /* MCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCachedImage.swift; sourceTree = "<group>"; };
+		CB220F372C677C1000D27CD0 /* MBookMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBookMarkView.swift; sourceTree = "<group>"; };
+		CB220F392C677C5900D27CD0 /* MBookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBookmarkViewModel.swift; sourceTree = "<group>"; };
+		CB220F3B2C6785FF00D27CD0 /* MDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDetailViewModel.swift; sourceTree = "<group>"; };
+		CB220F3E2C67868600D27CD0 /* MBookMarkRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBookMarkRepo.swift; sourceTree = "<group>"; };
+		CB220F402C679B0900D27CD0 /* MHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHomeViewModel.swift; sourceTree = "<group>"; };
+		CB220F422C679FCB00D27CD0 /* StaticDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticDataSource.swift; sourceTree = "<group>"; };
+		CB220F442C67A60E00D27CD0 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		CB220F462C67A73500D27CD0 /* books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB220F312C67707E00D27CD0 /* CachedAsyncImage in Frameworks */,
+				CB220F342C67709700D27CD0 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +158,19 @@
 		CB220EB12C64EA0E00D27CD0 /* MedBook */ = {
 			isa = PBXGroup;
 			children = (
+				CB220EF92C660ADB00D27CD0 /* DataModels */,
+				CB220EEF2C65EA2900D27CD0 /* APIHandlers */,
+				CB220EEA2C65DE7800D27CD0 /* Handlers */,
+				CB220ED22C64F65800D27CD0 /* Utils+Helpers */,
+				CB220EC92C64EE3300D27CD0 /* Coordinator */,
+				CB220EC82C64EE1B00D27CD0 /* Controllers */,
+				CB220EC72C64EDEF00D27CD0 /* Views */,
+				CB220EC62C64EBF900D27CD0 /* Components */,
+				CB220EC52C64EBB300D27CD0 /* Info.plist */,
+				CB220EC02C64EB6000D27CD0 /* Assets */,
 				CB220EB22C64EA0E00D27CD0 /* MedBookApp.swift */,
-				CB220EB42C64EA0E00D27CD0 /* ContentView.swift */,
+				CB220F022C661D2500D27CD0 /* ContentView.swift */,
+				CB220F442C67A60E00D27CD0 /* SplashScreen.swift */,
 				CB220EB62C64EA1000D27CD0 /* Assets.xcassets */,
 				CB220EB82C64EA1000D27CD0 /* Preview Content */,
 			);
@@ -65,6 +183,183 @@
 				CB220EB92C64EA1000D27CD0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB220EC02C64EB6000D27CD0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CB220F0E2C66460D00D27CD0 /* Lottie */,
+				CB220EC12C64EB6500D27CD0 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CB220EC12C64EB6500D27CD0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CB220EC42C64EB8D00D27CD0 /* Poppins-Bold.ttf */,
+				CB220EC22C64EB8C00D27CD0 /* Poppins-Medium.ttf */,
+				CB220EC32C64EB8D00D27CD0 /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CB220EC62C64EBF900D27CD0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CB220EE02C64FE9700D27CD0 /* MTextField.swift */,
+				CB220EE22C6501AC00D27CD0 /* MFillButton.swift */,
+				CB220EE82C654E8A00D27CD0 /* MCountrySelect.swift */,
+				CB220EF52C65F57500D27CD0 /* MCountriesListCell.swift */,
+				CB220F132C66531800D27CD0 /* MReadBookCell.swift */,
+				CB220F152C66556800D27CD0 /* MCircularProgressBar.swift */,
+				CB220F172C667A0200D27CD0 /* MCategoryChips.swift */,
+				CB220F192C667ED700D27CD0 /* MPopularCell.swift */,
+				CB220F1D2C66871E00D27CD0 /* MHorizontalCell.swift */,
+				CB220F252C672A0500D27CD0 /* MSortCell.swift */,
+				CB220F272C672D9D00D27CD0 /* MSearchBookCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CB220EC72C64EDEF00D27CD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB220F042C661D6200D27CD0 /* Home */,
+				CB220ED52C64F9A400D27CD0 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB220EC82C64EE1B00D27CD0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB220ED02C64F5EF00D27CD0 /* UserStateController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CB220EC92C64EE3300D27CD0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CB220ECA2C64EE4F00D27CD0 /* MRoutes.swift */,
+				CB220ECE2C64EE7300D27CD0 /* MNavigator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CB220ED22C64F65800D27CD0 /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB220ED32C64F66800D27CD0 /* MUserDefaults.swift */,
+				CB220EDB2C64FB6600D27CD0 /* MFont.swift */,
+				CB220EE42C652CDA00D27CD0 /* MColor.swift */,
+				CB220F112C66465A00D27CD0 /* LottieView.swift */,
+				CB220F352C6770C200D27CD0 /* MCachedImage.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		CB220ED52C64F9A400D27CD0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CB220F072C66211D00D27CD0 /* Repositories */,
+				CB220ED62C64FA3800D27CD0 /* MAuthView.swift */,
+				CB220ED92C64FA5300D27CD0 /* MAuthViewModel.swift */,
+				CB220EE62C653D1100D27CD0 /* MModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CB220EEA2C65DE7800D27CD0 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				CB220EEB2C65DE9100D27CD0 /* BaseNetworkHandler.swift */,
+				CB220EED2C65DF4600D27CD0 /* Network+Utils.swift */,
+				CB220EF32C65EF2400D27CD0 /* APIConstants.swift */,
+				CB220F002C661BD600D27CD0 /* AuthHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		CB220EEF2C65EA2900D27CD0 /* APIHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				CB220EF02C65EA5E00D27CD0 /* GetCountriesList.swift */,
+				CB220EF72C6602FF00D27CD0 /* GetCurrentCountry.swift */,
+				CB220F2D2C6731BC00D27CD0 /* SearchBook.swift */,
+			);
+			path = APIHandlers;
+			sourceTree = "<group>";
+		};
+		CB220EF92C660ADB00D27CD0 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				CB220EFA2C660AEB00D27CD0 /* User.swift */,
+				CB220EFC2C660D4C00D27CD0 /* Book.swift */,
+				CB220F422C679FCB00D27CD0 /* StaticDataSource.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		CB220F042C661D6200D27CD0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CB220F3D2C67867500D27CD0 /* Repo */,
+				CB220F2A2C67302000D27CD0 /* ViewModel */,
+				CB220F292C67301100D27CD0 /* View */,
+				CB220F232C67292500D27CD0 /* MSearchModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CB220F072C66211D00D27CD0 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CB220F082C66212C00D27CD0 /* SignInRepo.swift */,
+				CB220F0A2C66213A00D27CD0 /* SignUpRepo.swift */,
+				CB220F0C2C662B5400D27CD0 /* AuthDomainError.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CB220F0E2C66460D00D27CD0 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				CB220F462C67A73500D27CD0 /* books.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		CB220F292C67301100D27CD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB220F052C661D7200D27CD0 /* MHomeView.swift */,
+				CB220F1B2C66869700D27CD0 /* MBooksList.swift */,
+				CB220F1F2C66908200D27CD0 /* MDetailView.swift */,
+				CB220F212C6724BA00D27CD0 /* MSearchView.swift */,
+				CB220F372C677C1000D27CD0 /* MBookMarkView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB220F2A2C67302000D27CD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB220F2B2C67303A00D27CD0 /* MSearchViewModel.swift */,
+				CB220F392C677C5900D27CD0 /* MBookmarkViewModel.swift */,
+				CB220F3B2C6785FF00D27CD0 /* MDetailViewModel.swift */,
+				CB220F402C679B0900D27CD0 /* MHomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB220F3D2C67867500D27CD0 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				CB220F3E2C67868600D27CD0 /* MBookMarkRepo.swift */,
+			);
+			path = Repo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +378,10 @@
 			dependencies = (
 			);
 			name = MedBook;
+			packageProductDependencies = (
+				CB220F302C67707E00D27CD0 /* CachedAsyncImage */,
+				CB220F332C67709700D27CD0 /* Lottie */,
+			);
 			productName = MedBook;
 			productReference = CB220EAF2C64EA0E00D27CD0 /* MedBook.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +410,10 @@
 				Base,
 			);
 			mainGroup = CB220EA62C64EA0E00D27CD0;
+			packageReferences = (
+				CB220F2F2C67707E00D27CD0 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				CB220F322C67709700D27CD0 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = CB220EB02C64EA0E00D27CD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +428,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB220F472C67A73500D27CD0 /* books.json in Resources */,
+				CB220EDD2C64FD1900D27CD0 /* Poppins-Medium.ttf in Resources */,
 				CB220EBA2C64EA1000D27CD0 /* Preview Assets.xcassets in Resources */,
+				CB220EDF2C64FD1900D27CD0 /* Poppins-Bold.ttf in Resources */,
 				CB220EB72C64EA1000D27CD0 /* Assets.xcassets in Resources */,
+				CB220EDE2C64FD1900D27CD0 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +444,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB220EB52C64EA0E00D27CD0 /* ContentView.swift in Sources */,
+				CB220ED42C64F66800D27CD0 /* MUserDefaults.swift in Sources */,
+				CB220F2E2C6731BC00D27CD0 /* SearchBook.swift in Sources */,
+				CB220F1E2C66871E00D27CD0 /* MHorizontalCell.swift in Sources */,
+				CB220EE12C64FE9700D27CD0 /* MTextField.swift in Sources */,
+				CB220F432C679FCB00D27CD0 /* StaticDataSource.swift in Sources */,
+				CB220F412C679B0900D27CD0 /* MHomeViewModel.swift in Sources */,
+				CB220F182C667A0200D27CD0 /* MCategoryChips.swift in Sources */,
+				CB220EE92C654E8A00D27CD0 /* MCountrySelect.swift in Sources */,
+				CB220ECB2C64EE4F00D27CD0 /* MRoutes.swift in Sources */,
+				CB220F452C67A60E00D27CD0 /* SplashScreen.swift in Sources */,
+				CB220EEE2C65DF4600D27CD0 /* Network+Utils.swift in Sources */,
+				CB220F3C2C6785FF00D27CD0 /* MDetailViewModel.swift in Sources */,
+				CB220EF82C6602FF00D27CD0 /* GetCurrentCountry.swift in Sources */,
+				CB220F2C2C67303A00D27CD0 /* MSearchViewModel.swift in Sources */,
+				CB220EEC2C65DE9100D27CD0 /* BaseNetworkHandler.swift in Sources */,
+				CB220F0B2C66213A00D27CD0 /* SignUpRepo.swift in Sources */,
+				CB220F1C2C66869700D27CD0 /* MBooksList.swift in Sources */,
+				CB220F012C661BD600D27CD0 /* AuthHandler.swift in Sources */,
+				CB220F3A2C677C5900D27CD0 /* MBookmarkViewModel.swift in Sources */,
+				CB220EE52C652CDA00D27CD0 /* MColor.swift in Sources */,
+				CB220EDA2C64FA5300D27CD0 /* MAuthViewModel.swift in Sources */,
+				CB220F122C66465A00D27CD0 /* LottieView.swift in Sources */,
+				CB220EE32C6501AC00D27CD0 /* MFillButton.swift in Sources */,
+				CB220F092C66212C00D27CD0 /* SignInRepo.swift in Sources */,
+				CB220F3F2C67868600D27CD0 /* MBookMarkRepo.swift in Sources */,
+				CB220F0D2C662B5400D27CD0 /* AuthDomainError.swift in Sources */,
+				CB220EE72C653D1100D27CD0 /* MModel.swift in Sources */,
 				CB220EB32C64EA0E00D27CD0 /* MedBookApp.swift in Sources */,
+				CB220F242C67292500D27CD0 /* MSearchModel.swift in Sources */,
+				CB220EDC2C64FB6600D27CD0 /* MFont.swift in Sources */,
+				CB220EFD2C660D4C00D27CD0 /* Book.swift in Sources */,
+				CB220ECF2C64EE7300D27CD0 /* MNavigator.swift in Sources */,
+				CB220F142C66531800D27CD0 /* MReadBookCell.swift in Sources */,
+				CB220F362C6770C200D27CD0 /* MCachedImage.swift in Sources */,
+				CB220EF62C65F57500D27CD0 /* MCountriesListCell.swift in Sources */,
+				CB220F032C661D2500D27CD0 /* ContentView.swift in Sources */,
+				CB220F222C6724BA00D27CD0 /* MSearchView.swift in Sources */,
+				CB220F202C66908200D27CD0 /* MDetailView.swift in Sources */,
+				CB220F162C66556800D27CD0 /* MCircularProgressBar.swift in Sources */,
+				CB220EF42C65EF2400D27CD0 /* APIConstants.swift in Sources */,
+				CB220F382C677C1000D27CD0 /* MBookMarkView.swift in Sources */,
+				CB220F262C672A0500D27CD0 /* MSortCell.swift in Sources */,
+				CB220F062C661D7200D27CD0 /* MHomeView.swift in Sources */,
+				CB220EF12C65EA5E00D27CD0 /* GetCountriesList.swift in Sources */,
+				CB220ED72C64FA3800D27CD0 /* MAuthView.swift in Sources */,
+				CB220F1A2C667ED700D27CD0 /* MPopularCell.swift in Sources */,
+				CB220ED12C64F5EF00D27CD0 /* UserStateController.swift in Sources */,
+				CB220F282C672D9D00D27CD0 /* MSearchBookCell.swift in Sources */,
+				CB220EFB2C660AEB00D27CD0 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +629,7 @@
 				DEVELOPMENT_TEAM = H2Q26ZGK38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedBook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +659,7 @@
 				DEVELOPMENT_TEAM = H2Q26ZGK38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedBook/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +700,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB220F2F2C67707E00D27CD0 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+		CB220F322C67709700D27CD0 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB220F302C67707E00D27CD0 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB220F2F2C67707E00D27CD0 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+		CB220F332C67709700D27CD0 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB220F322C67709700D27CD0 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB220EA72C64EA0E00D27CD0 /* Project object */;
 }

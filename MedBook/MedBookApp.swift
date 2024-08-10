@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct MedBookApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+                SplashScreen()
         }
     }
 }
